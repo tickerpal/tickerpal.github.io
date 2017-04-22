@@ -116,26 +116,26 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Delivered with a simple Command</h4>
+                    <p class="text-muted">You can retrieve the the price of any stock by using the slash command <code>/ticker</code> followed by the stock ticker you are interested in.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Fully Customizable</h4>
+                    <p class="text-muted">Beyond the latest price for the stock price of the day you can display a chart, and some additional daily metrics.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-share-square-o fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Sharable Insights</h4>
+                    <p class="text-muted">Once you have the insights formed to your liking you can share them with your team as you see them.</p>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Features</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">A few of the things that you can do with Tickerpal.</h3>
                 </div>
             </div>
             <div class="row">
@@ -163,7 +163,7 @@
                                     <h4 class="subheading">Simple Stock Quotes</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">You can retrieve the the price of any stock by using the slash command <code>/ticker</code> followed by the stock ticker you are interested in.</p>
                                 </div>
                             </div>
                         </li>
@@ -176,7 +176,7 @@
                                     <h4 class="subheading">Daily Chart</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">In addition to the current price of the stock you are interested for the day there is a daily chart that tracks the price throughout the day.</p>
                                 </div>
                             </div>
                         </li>
@@ -189,7 +189,7 @@
                                     <h4 class="subheading">In Depth Metrics</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">In addition to the current price of a stock, with Tickerpal you have the ability to see the opening price, the volume of trades, the high, and low prices for the day.</p>
                                 </div>
                             </div>
                         </li>
@@ -202,7 +202,7 @@
                                     <h4 class="subheading">Share with Your Channel</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Just by clicking the <strong>share</strong> button once you have the insights formed to your liking you can share them with your team as you see them.</p>
                                 </div>
                             </div>
                         </li>
@@ -261,18 +261,19 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate action="mailto:dylan.k.roy@gmail.com&title=TIckerpal+Contact+Form">
+                    <form name="sentMessage" id="contactForm" novalidate action="mailto:dylan.k.roy@gmail.com" method="get" enctype="text/plain">
+                        <input type="hidden" id="subject" name="subject" value="Tickerpal&nbsp;Contact&nbsp;Form">
                         <div class="row">
                             <div class="col-md-offset-2 col-md-8">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="subject" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="body" name="body" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <input type="submit" class="btn btn-xl" value="Send Message">
                             </div>
                         </div>
                     </form>
@@ -320,7 +321,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
