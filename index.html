@@ -350,10 +350,13 @@
       } 
       return query_string;
     }();
-    if(QueryString[""] != "undefined"){
-        $("#slack-team").removeClass("hidden");
-        $("#slack-team").attr("href", "https://" + QueryString["team_name"] + ".slack.com");
-    }
+    $(document).ready(function (event) {
+        if(QueryString[""] != "undefined"){
+            $("#slack-team").removeClass("hidden");
+            $("#slack-team").attr("href", "https://" + QueryString["team_name"] + ".slack.com");
+            $("body").scrollTop($("#demo").offset().top);
+        }
+    });
     </script>
 </body>
 
