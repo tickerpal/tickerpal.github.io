@@ -355,6 +355,7 @@
             $("#slack-team").removeClass("hidden");
             $("#slack-team").attr("href", "https://" + QueryString["team_name"] + ".slack.com");
             $("body").scrollTop($("#demo").offset().top);
+            window.location.hash = "#demo";
         }
     });
     </script>
