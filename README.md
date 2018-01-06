@@ -1,5 +1,5 @@
-# Tickerpal Slackbot
-A slackbot that allows you to get stock prices on demand in Slack.
+# Tickerpal Slack Bot
+A slack bot that allows you to get stock prices on demand in Slack.
 
 ## Install
 Install it on your own slack team.  
